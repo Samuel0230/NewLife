@@ -1,145 +1,177 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto-New-Life</title>
+    <title>Viviendas-New-Life</title>
+    <!--==================== Link Bootstrap ====================-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!--==================== Favicon ====================-->
     <link rel="shortcut icon" href="icons/house.png" type="imagen/icon" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link rel="stylesheet" href="css/contacto.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+
+    <!--==================== Link Css Navbar ====================-->
+    <link rel="stylesheet" href="css/navbar.css" />
+
+    <!--==================== Link Bootstrap ====================-->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!--==================== Link Font Awesome ====================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
   </head>
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-    <aside class="container-fluid pt-2 my-2">
-      <a class="navbar-brand" href="#">Logo</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <aside class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="viviendas.html">Viviendas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="nosotros.html">Nosotros</a>
-          </li>
-        </ul>
-        <form role="search">
-          <button class="btn btn-outline-light" type="submit">Admin</button>
-        </form>
-        <aside class="icon d-flex" style="margin-left: 20px">
-          <a class="bg-dark" href="login.html">
-            <i class="bi bi-person"></i>
-          </a>
+  <body>
+    <!--==================== NavBar ====================-->
+    <aside class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <aside class="container-fluid pt-2 my-2">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <aside class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form role="search">
+            <button class="btn btn-outline-light" type="submit">Admin</button>
+          </form>
+          <aside class="icon d-flex" style="margin-left: 20px">
+            <a class="bg-dark" href="Login.html">
+              <i class="bi bi-person"></i>
+            </a>
+          </aside>
         </aside>
       </aside>
     </aside>
-  </nav>
+    <!--==================== Filtro De Busqueda ====================-->
+    <main class="p-3">
+      <aside class="card">
+        <aside class="card-body">
+            <aside class="card" style="max-width: 100%;">
+                <aside class="card-header text-bg-dark text-center fs-4"><i class="bi bi-filter-circle"></i> Realizar Consulta Personalizada <i class="bi bi-filter-circle"></i></aside>
+                <aside class="card-body" style="justify-content: center;">
+                  <aside class="row">
 
-  <body>
-    <!-- <header><a href="#">Inicio</a></header> -->
-    <main>
-      <aside class="row container">
-        <aside class="col-6">
-          <form id="form" class="p-3 was-validated">
-            <aside class="field">
-              <label for="Nombre">Nombre</label>
-              <input
-                type="text"
-                name="Nombre"
-                id="Nombre"
-                class="form-control"
-                required
-                placeholder="Nombre"
-              />
-            </aside>
-            <aside class="field">
-              <label for="Telefono">Telefono</label>
-              <input
-                type="text"
-                name="Telefono"
-                id="Telefono"
-                class="form-control"
-                required
-                placeholder="Telefono"
-              />
-            </aside>
-            <aside class="field">
-              <label for="Email">Email</label>
-              <input
-                type="text"
-                name="Email"
-                id="Email"
-                class="form-control"
-                required
-                placeholder="Email"
-              />
-            </aside>
+                    <form action="#" >
 
-            <aside class="field">
-              <label for="Mensaje">Mensaje</label>
-              <textarea
-                type="text"
-                name="Mensaje"
-                id="Mensaje"
-                class="form-control"
-                required
-                placeholder="Mensaje"
-                rows="5"
-              ></textarea>
-              <br />
-            </aside>
-            <input
-              type="submit"
-              id="button"
-              class="btn btn-success"
-              value="Enviar Email"
-            />
-          </form>
-        </aside>
+                        <aside class="col">
+                            <aside class="form-group p-1">
+                            <label for="select1">Tipo De Vivienda</label>
+                            <select class="form-control" id="select1" style="width: 100%;">
+                              <option value="opcion1">Selecionar</option>
+                              <option value="opcion2">Apartamento</option>
+                              <option value="opcion3">Casa</option>
+                              <option value="opcion3">Finca</option>
+                              <option value="opcion3">Lote</option>
+                              <option value="opcion3">Local</option>
+                            </select>
+                           </aside>
+                          </aside>
+                          <aside class="col">
+                            <aside class="form-group p-1">
+                            <label for="select1">Estado</label>
+                            <select class="form-control" id="select1">
+                              <option value="opcion1">Selecionar</option>
+                              <option value="opcion2">En Alquiler</option>
+                              <option value="opcion3">En Venta</option>
+                              <option value="opcion3">Alquiler O Venta</option>
+                            </select>
+                        </aside>
+                          </aside>
+                          <aside class="col">
+                            <aside class="form-group p-1">
+                            <label for="select1"><i class="bi bi-buildings-fill"></i> Nivel</label>
+                            <select class="form-control" id="select1">
+                              <option value="opcion3">Seleccionar</option>
+                              <option value="opcion1">1</option>
+                              <option value="opcion2">2</option>
+                              <option value="opcion3">3</option>
+                              <option value="opcion3">5</option>
+                              <option value="opcion3">6</option>
+                              <option value="opcion3">7</option>
+                              <option value="opcion3">8</option>
+                              <option value="opcion3">9</option>
+                            </select>
+                        </aside>
+                          </aside>
+                          <aside class="col  form-group ">
+                            <aside class="p-1">
+                            <label for="select1"><i class="bi bi-people-fill"></i> Habitaciones</label>
+                            <select class="form-control" id="select1">
+                              <option value="opcion3">Seleccionar</option>
+                              <option value="opcion1">1</option>
+                              <option value="opcion2">2</option>
+                              <option value="opcion3">3</option>
+                              <option value="opcion3">5</option>
+                              <option value="opcion3">6</option>
+                              <option value="opcion3">7</option>
+                              <option value="opcion3">8</option>
+                              <option value="opcion3">9</option>
+                            </select>
+                        </aside>
+                          </aside>
+                          <aside class="col form-group ">
+                            <aside class=" p-1">
+                            <label for="select1">Departamento</label>
+                            <select class="form-control" id="select1">
+                              <option value="opcion3">Seleccionar</option>
+                              <option value="opcion1">Antioquia</option>
+                              <option value="opcion2">Atlantico</option>
+                              <option value="opcion3">Cundinamarca</option>
+                            </select>
+                        </aside>
+                          </aside>
+                          <aside class="col  form-group">
+                            <aside class="form-group p-1">
+                            <label for="select1">Municipio</label>
+                            <select class="form-control" id="select1">
+                              <option value="opcion3">Seleccionar</option>
+                              <option value="opcion1">Bello</option>
+                              <option value="opcion2">Copacabana</option>
+                              <option value="opcion3">Rio Negro</option>
+                              <option value="opcion3">Girardota</option>
+                              <option value="opcion3">Cisneros</option>
+                            </select>
+                        </aside>
+                          </aside>
+                          <aside class="col">
+                            <aside class="form-group p-1">
+                            <label for="select1"><i class="bi bi-search"></i> Buscar</label>
+                            <button type="button" class="btn btn-success" style="width: 100%; "><i class="bi bi-search"></i> Buscar</button>
+                        </aside>
+                          </aside>
 
-        <!-- Mapa de Google Maps -->
+                    </form>
 
-        <aside class="col-6">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.4324833804585!2d-75.54798622635151!3d6.337987125294116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442f11a205b239%3A0xa3974aa926dbfac1!2sCesde%20sede%20norte!5e0!3m2!1ses!2sco!4v1717025826439!5m2!1ses!2sco"
-            width="100%"
-            height="450"
-            style="border: 0"
-            padding="550px"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+                  </aside>
+                </aside>
         </aside>
       </aside>
     </main>
@@ -180,10 +212,7 @@
               </a>
             </p>
             <p class="fs-6">
-              <a
-                href="contacto.html"
-                class="text-white"
-                style="text-decoration: none"
+              <a href="contacto.html" class="text-white" style="text-decoration: none"
                 >PQRSF
               </a>
             </p>
@@ -256,8 +285,7 @@
                     class="btn-floating btn-sm text-white"
                     style="text-decoration: none"
                     style="font-size: 30px"
-                    ><i class="bi bi-facebook"></i
-                  ></a>
+                    ><i class="bi bi-facebook"></i></a>
                 </li>
                 <li class="list-inline-item">
                   <a
@@ -266,8 +294,7 @@
                     class="btn-floating btn-sm text-white"
                     style="text-decoration: none"
                     style="font-size: 30px"
-                    ><i class="bi bi-telegram"></i
-                  ></a>
+                    ><i class="bi bi-telegram"></i></a>
                 </li>
                 <li class="list-inline-item">
                   <a
@@ -276,8 +303,7 @@
                     style="text-decoration: none"
                     class="btn-floating btn-sm text-white"
                     style="font-size: 30px"
-                    ><i class="bi bi-instagram"></i
-                  ></a>
+                    ><i class="bi bi-instagram"></i></a>
                 </li>
                 <li class="list-inline-item">
                   <a
@@ -286,8 +312,7 @@
                     target="_blank"
                     class="btn-floating btn-sm text-white"
                     style="font-size: 30px"
-                    ><i class="bi bi-threads"></i
-                  ></a>
+                    ><i class="bi bi-threads"></i></a>
                 </li>
               </ul>
             </aside>
@@ -444,6 +469,8 @@
         </aside>
       </aside>
     </aside>
+
+    <!--==================== Scripts ====================-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
