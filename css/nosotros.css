@@ -1,74 +1,135 @@
-.nav-link{
-    position: relative;
-}
-.nav-link::after{
-    content: '';
-    opacity: 0;
-    transition: all 0.5s;
-    height: 2px;
-    width: 100%;
-    background-color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+/*<!--==================== section about ====================-->*/
+.section-title {
+  text-transform: capitalize;
+  align-items: center;
 }
 
-.nav-link:hover::after{
-    opacity: 1;
+.about-data {
+  align-items: center;
 }
 
-.icon{
-    font-size: 25px;
-}
-.icon a{
-    color: white;
+.about-description {
+  margin-bottom: 32px;
 }
 
-/* Quienes Somos */
+.about-container {
+  row-gap: 40px;
+}
 
-.contenedor{
-    margin: 25px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-  }
-  .contenedor .contenedor1 .p{
+.about-img {
+  display: flex;
+  column-gap: 16px;
+  justify-content: center;
+}
+
+.about-img-overlay {
+  overflow: hidden;
+}
+
+.about-img-one {
+  width: 180px;
+}
+
+.about-img-two {
+  width: 220px;
+}
+
+.about__img-one,
+.about__img-two {
+  transition: 0.3s;
+}
+
+.about-img-one:hover,
+.about-img-two:hover {
+  transform: scale(1.1);
+}
+
+/*<!--==================== section quienes somos ====================-->*/
+
+.contenedor {
+  margin: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.contenedor .contenedor1 .p {
   margin: 25px;
   width: 500px;
-  }
-  .logo_magen{
+}
+.logo_magen {
   width: 400px;
   height: 400px;
   margin-left: 200px;
-  } 
-  /* Preguntas Frecuentes */
-  .preguntas_frecuentes{
-    display: flex;
-    justify-content: center;
-  }
-  .faq{
-    background-color: #262b2e;
-    padding: 15px;
-    border-radius: 10px;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    width: 600px;
-  }
-  .h1pf{
-    color: white;
-    justify-content: center;
-  }
-  summary:before{
-    /* content: "❓"; */
-    margin-right: 10px;
-  }
-  .txt_pf{
-    background-color: #262b2e;
+}
+/* Preguntas Frecuentes */
+.preguntas_frecuentes {
+  display: flex;
+  justify-content: center;
+}
+.faq {
+  background-color: #262b2e;
+  padding: 15px;
+  border-radius: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  width: 600px;
+}
+.h1pf {
+  color: white;
+  justify-content: center;
+}
+summary:before {
+  /* content: "❓"; */
+  margin-right: 10px;
+}
+.txt_pf {
+  background-color: #262b2e;
   color: white;
   border-radius: 6px;
+}
+.text-summary {
+  font-size: 20px;
+  color: white;
+  list-style: none;
+  margin: 1px 1px;
+}
+
+/*<!--==================== section team ====================-->*/
+
+.section-padding {
+  padding: 90px 0;
+}
+
+.team .card-body {
+  font-size: 20px;
+}
+
+.card {
+  box-shadow: 15px 15px 40px rgba(22, 23, 7, 0.15);
+}
+
+.about-text {
+  padding-top: 50px;
+}
+
+.card {
+  margin-bottom: 30px;
+}
+/*<!--==================== section team CSS Media ====================-->*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .card {
+    margin-bottom: 30px;
   }
-  .text-summary{
-    font-size: 20px;
-    color: white;
-    list-style: none;
-    margin: 1px 1px;
+  .img-area img {
+    width: 100%;
   }
+}
+
+@media only screen and (max-width: 767px) {
+  .card {
+    margin-bottom: 30px;
+  }
+  .img-area img {
+    width: 100%;
+  }
+}

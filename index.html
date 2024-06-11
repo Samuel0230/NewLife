@@ -8,6 +8,12 @@
     <!--==================== Link CSS Navbar ====================-->
     <link rel="stylesheet" href="css/navbar.css" />
 
+    <!--==================== Link CSS carousel ====================-->
+    <link rel="stylesheet" href="css/carousel.css" />
+
+    <!--==================== Link CSS section services ====================-->
+    <link rel="stylesheet" href="css/section-services.css" />
+
     <!--==================== Link Icons Bootstrap ====================-->
     <link
       rel="stylesheet"
@@ -23,14 +29,17 @@
     />
 
     <!--==================== Favicon ====================-->
-    <link rel="shortcut icon" href="icons/house.png" type="imagen/icon" />
+    <link rel="shortcut icon" href="icons/favicon.ico" type="imagen/icon" />
   </head>
 
   <body>
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
       <aside class="container-fluid pt-2 my-2">
-        <a class="navbar-brand" href="#"
-          ><img src="images/logo.jfif" alt="" style="height: 40px; width: 100%"
+        <a class="navbar-brand" href="index.html"
+          ><img
+            src="images/logo.jfif"
+            alt="logo2"
+            style="height: 40px; width: 100%"
         /></a>
         <button
           class="navbar-toggler"
@@ -69,8 +78,9 @@
         </aside>
       </aside>
     </nav>
-    <div id="carouselExampleCaptions" class="carousel slide">
-      <div class="carousel-indicators">
+    <!--==================== Carousel ====================-->
+    <aside id="carouselExampleCaptions" class="carousel slide">
+      <aside class="carousel-indicators">
         <button
           type="button"
           data-bs-target="#carouselExampleCaptions"
@@ -91,30 +101,54 @@
           data-bs-slide-to="2"
           aria-label="Slide 3"
         ></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="images/medellin.jpeg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="images/Colombia.jpg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="images/bogota.jfif" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
-      </div>
+      </aside>
+      <aside class="carousel-inner">
+        <aside class="carousel-item active">
+          <img src="images/home-1.jpg" class="d-block w-100" alt="home-1" />
+          <aside class="carousel-caption">
+            <h5 class="fs-2">La Casa De Tus Sueños</h5>
+            <p class="fs-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A aut
+              dicta libero vitae doloremque esse?
+            </p>
+            <p>
+              <a href="contacto.html" class="btn btn-warning mt-3"
+                >Contactanos...</a
+              >
+            </p>
+          </aside>
+        </aside>
+        <aside class="carousel-item">
+          <img src="images/home-2.jpg" class="d-block w-100" alt="..." />
+          <aside class="carousel-caption">
+            <h5 class="fs-2">La Casa De Tus Sueños</h5>
+            <p class="fs-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A aut
+              dicta libero vitae doloremque esse?
+            </p>
+            <p>
+              <a href="contacto.html" class="btn btn-warning mt-3"
+                >Contactanos...</a
+              >
+            </p>
+          </aside>
+        </aside>
+        <aside class="carousel-item">
+          <img src="images/home-3.jpg" class="d-block w-100" alt="..." />
+          <aside class="carousel-caption">
+            <h5 class="fs-2">La Casa De Tus Sueños</h5>
+            <p class="fs-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A aut
+              dicta libero vitae doloremque esse?
+            </p>
+            <p>
+              <a href="contacto.html" class="btn btn-warning mt-3"
+                >Contactanos...</a
+              >
+            </p>
+          </aside>
+        </aside>
+      </aside>
       <button
         class="carousel-control-prev"
         type="button"
@@ -133,57 +167,177 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div>
+    </aside>
 
-    <main>
-      <br />
-      <section>
-        <div class="container mt-5 text-center">
-          <h2
-            class="mb-4 fs-1"
-            style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5)"
-          >
-            Solicitud de Arrendamiento
-          </h2>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="card" style="border: none">
-                <div class="card-body">
-                  <a
-                    href="#"
-                    id="downloadFile1"
-                    class="btn btn-link text-dark"
-                    style="text-decoration: none"
-                  >
-                    <h5 class="card-title">
-                      Solicitud De Arrendamiento Para Personas Juridicas
-                    </h5>
-                    Descargar Aquí <i class="bi bi-arrow-up-left-circle"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card" style="border: none">
-                <div class="card-body">
-                  <a
-                    href="#"
-                    id="downloadFile2"
-                    class="btn btn-link text-dark"
-                    style="text-decoration: none"
-                    ><h5 class="card-title">
-                      Solicitud De Arrendamiento Para Personas Naturales
-                    </h5>
-                    Descargar Aquí <i class="bi bi-arrow-up-left-circle"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <br />
-    </main>
+    <!--==================== section services ====================-->
+    <section id="services" class="services section-padding">
+      <aside class="container services">
+        <aside class="row">
+          <aside class="col-md-12">
+            <aside class="section-header text-center pb-5">
+              <h2>NUESTROS SERVICIOS</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <br />
+                Error recusandae quae in iusto, distinctio illo!
+              </p>
+            </aside>
+          </aside>
+        </aside>
+
+        <aside class="row">
+          <aside class="col-12 col-md-12 col-lg-4">
+            <aside class="card text-white text-center bg-dark pb-2">
+              <aside class="card-body">
+                <i class="bi bi-subtract"></i>
+                <h3 class="card-title">Best Quality</h3>
+                <p class="lead">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Rerum rem doloribus quae maxime! Qui itaque vitae non totam
+                  alias dolore doloremque. Debitis quae magnam cumque!
+                </p>
+                <a class="btn btn-warning text-dark">Mas...</a>
+              </aside>
+            </aside>
+          </aside>
+
+          <aside class="col-12 col-md-12 col-lg-4">
+            <aside class="card text-white text-center bg-dark pb-2">
+              <aside class="card-body">
+                <i class="bi bi-slack"></i>
+                <h3 class="card-title">Best Quality</h3>
+                <p class="lead">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Rerum rem doloribus quae maxime! Qui itaque vitae non totam
+                  alias dolore doloremque. Debitis quae magnam cumque!
+                </p>
+                <a href="" class="btn btn-warning text-dark">Mas...</a>
+              </aside>
+            </aside>
+          </aside>
+
+          <aside class="col-12 col-md-12 col-lg-4">
+            <aside class="card text-white text-center bg-dark pb-2">
+              <aside class="card-body">
+                <i class="bi bi-flower1"></i>
+                <h3 class="card-title">Best Quality</h3>
+                <p class="lead">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Rerum rem doloribus quae maxime! Qui itaque vitae non totam
+                  alias dolore doloremque. Debitis quae magnam cumque!
+                </p>
+                <a href="#" class="btn btn-warning text-dark">Mas...</a>
+              </aside>
+            </aside>
+          </aside>
+        </aside>
+      </aside>
+    </section>
+    <!--==================== section portafolio ====================-->
+    <section id="portafolio" class="portafolio section-padding">
+      <aside class="container">
+        <aside class="container services">
+          <aside class="row">
+            <aside class="col-md-12">
+              <aside class="section-header text-center pb-5">
+                <h2>NUESTROS PROYECTOS</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  <br />
+                  Error recusandae quae in iusto, distinctio illo!
+                </p>
+              </aside>
+            </aside>
+          </aside>
+          <aside class="row">
+            <aside class="col-12 col-md-12 col-lg-4">
+              <aside class="card text-center bg-dark pb-2">
+                <aside class="card-body text-white">
+                  <aside class="img-area mb-4">
+                    <img src="images/project-1.jpg" alt="project-1" class="img-fluid">
+                  </aside>
+                  <h3 class="card-title">EN CONSTRUCCIÓN</h3>
+                  <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis quas similique sequi debitis, earum recusandae.</p>
+                  <a href="viviendas.html" class="btn btn-warning text-dark">Mas...</a>
+                </aside>
+              </aside>
+            </aside>
+            <aside class="col-12 col-md-12 col-lg-4">
+              <aside class="card text-center bg-dark pb-2">
+                <aside class="card-body text-white">
+                  <aside class="img-area mb-4">
+                    <img src="images/project-2.jpg" alt="project-1" class="img-fluid">
+                  </aside>
+                  <h3 class="card-title">EN VENTA</h3>
+                  <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis quas similique sequi debitis, earum recusandae.</p>
+                  <a href="viviendas.html" class="btn btn-warning text-dark">Mas...</a>
+                </aside>
+              </aside>
+            </aside>
+            <aside class="col-12 col-md-12 col-lg-4">
+              <aside class="card text-center bg-dark pb-2">
+                <aside class="card-body text-white">
+                  <aside class="img-area mb-4">
+                    <img src="images/project-3.jpg" alt="project-1" class="img-fluid">
+                  </aside>
+                  <h3 class="card-title">EN ARRIENDO</h3>
+                  <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis quas similique sequi debitis, earum recusandae.</p>
+                  <a href="viviendas.html" class="btn btn-warning text-dark">Mas...</a>
+                </aside>
+              </aside>
+            </aside>
+            
+          </aside>
+        </aside>
+    </section>
+
+    <!--==================== section solicitud de arrendamiento ====================-->
+    <section id="soli-arrend" class="soli-arrend section-padding">
+      <aside class="container mt-5 text-center">
+        <h2
+          class="mb-4 fs-1"
+          style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5)"
+        >
+          Solicitud de Arrendamiento
+        </h2>
+        <aside class="row">
+          <aside class="col-md-6">
+            <aside class="card" style="border: none">
+              <aside class="card-body">
+                <a
+                  href="#"
+                  id="downloadFile1"
+                  class="btn btn-link text-dark"
+                  style="text-decoration: none"
+                >
+                  <h5 class="card-title">
+                    Solicitud De Arrendamiento Para Personas Juridicas
+                  </h5>
+                  Descargar Aquí <i class="bi bi-arrow-up-left-circle"></i
+                ></a>
+              </aside>
+            </aside>
+          </aside>
+          <aside class="col-md-6">
+            <aside class="card" style="border: none">
+              <aside class="card-body">
+                <a
+                  href="#"
+                  id="downloadFile2"
+                  class="btn btn-link text-dark"
+                  style="text-decoration: none"
+                  ><h5 class="card-title">
+                    Solicitud De Arrendamiento Para Personas Naturales
+                  </h5>
+                  Descargar Aquí <i class="bi bi-arrow-up-left-circle"></i
+                ></a>
+              </aside>
+            </aside>
+          </aside>
+        </aside>
+      </aside>
+    </section>
+    <br />
 
     <!--==================== FOOTER ====================-->
     <footer class="bg-dark text-white pt-5 pb-4">
@@ -217,7 +371,10 @@
               </a>
             </p>
             <p class="fs-6">
-              <a href="#" class="text-white" style="text-decoration: none"
+              <a
+                href="contacto.html"
+                class="text-white"
+                style="text-decoration: none"
                 >Dudas O Comentarios
               </a>
             </p>
@@ -258,7 +415,10 @@
               Finca Raíz
             </p>
             <p class="fs-6">
-              <a href="#" class="text-white" style="text-decoration: none"
+              <a
+                href="contacto.html"
+                class="text-white"
+                style="text-decoration: none"
                 >Centro De Ayudas
               </a>
             </p>
@@ -273,11 +433,18 @@
               Contactanos
             </h5>
             <p class="fs-6">
-              <i class="fas fa-home mr-3"></i> Medellín, Antioquia
+              <i class="bi bi-crosshair2"></i> Medellín, Antioquia
             </p>
-            <p class="fs-6"><i class="fas fa-envelope mr-3"></i> house</p>
-            <p class="fs-6"><i class="fas fa-phone mr-3"></i> mousr</p>
-            <p class="fs-6"><i class="fas fa-print mr-3"></i> oisfpa</p>
+            <p class="fs-6">
+              <i class="bi bi-geo-fill"></i> Carrera 42 #48-20 Edificio Cesde
+            </p>
+            <p class="fs-6">
+              <i class="bi bi-telephone-plus"></i> +57 31234235434
+            </p>
+            <p class="fs-6">
+              <i class="bi bi-envelope-at-fill"></i>
+              InmobiliariaNewLife@gmail.com
+            </p>
           </aside>
         </aside>
         <hr class="mb-4" />

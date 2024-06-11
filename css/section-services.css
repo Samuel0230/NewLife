@@ -1,0 +1,38 @@
+.section-padding {
+  padding: 90px 0;
+}
+.services .card-body i {
+  font-size: 50px;
+}
+
+.portafolio .card {
+  box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.about-text {
+  padding-top: 50px;
+}
+
+.card {
+  margin-bottom: 30px;
+}
+
+/*<!--==================== section services CSS Media ====================-->*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .card {
+    margin-bottom: 30px;
+  }
+  .img-area img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .card {
+    margin-bottom: 30px;
+  }
+  .img-area img {
+    width: 100%;
+  }
+}
